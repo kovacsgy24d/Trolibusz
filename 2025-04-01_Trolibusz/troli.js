@@ -1,3 +1,4 @@
+
 var vegallomasNevek = [];
 vegallomasNevek["70"] = "Kossuth Lajos tér - Erzsébet királyné útja, aluljáró";
 vegallomasNevek["72"] = "Orczy tér - Zugló vasútállomás (Hermina út)";
@@ -11,8 +12,6 @@ vegallomasNevek["79"] = "Keleti pályaudvar - Kárpát utca";
 vegallomasNevek["80"] = "Keleti pályaudvar - Örs vezér tere";
 vegallomasNevek["81"] = "Örs vezér tere - Fischer István utca";
 vegallomasNevek["82"] = "Uzsoki Utcai Kórház - Örs vezér tere";
-vegallomasNevek["83"] = "Fővám tér - Orczy tér";
-
 
 function jaratKiiras(elem, index){
 	var ujElem = document.createElement("option");
@@ -22,11 +21,10 @@ function jaratKiiras(elem, index){
 }
 
 function vegallomasKiiras(jarat){
-    document.getElementById("vegallomasok").innerHTML=vegallomasNevek[jarat];
+    document.getElementById("valasz").innerHTML=vegallomasNevek[jarat];
 }
 
 function fel() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
-
